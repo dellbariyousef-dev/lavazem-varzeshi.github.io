@@ -1,0 +1,16 @@
+body {
+    font-family: Vazirmatn, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border-radius: 10px;
+}
+
+.shopping-bag {
+    width: 30px;
+    height: 35px;
+}
