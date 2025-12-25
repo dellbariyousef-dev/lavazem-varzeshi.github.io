@@ -1,0 +1,160 @@
+﻿/* reset ساده */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+/* بک گراند کل سایت */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* هدر */
+header {
+  background: rgba(255,255,255,0.9);
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h2 {
+  margin-bottom: 10px;
+}
+
+header input {
+  padding: 8px;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* سبد خرید */
+#cart {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* محصولات */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* کارت محصول */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.card h4 {
+  margin-top: 10px;
+}
+
+/* مودال */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* مخفی */
+.hidden {
+  display: none !important;
+}
+
+/* محتوای مودال */
+.modal-content {
+  background: white;
+  width: 320px;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2000;
+}
+
+/* دکمه بستن × */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  z-index: 3000;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* عکس اصلی مودال */
+#mainImg {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* عکس‌های کوچک */
+.thumbs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.thumbs img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.thumbs img:hover {
+  border-color: #2a5298;
+}
+
+/* دکمه افزودن به سبد */
+#addToCartBtn {
+  width: 100%;
+  padding: 10px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#addToCartBtn:hover {
+  background: #1e3c72;
+}
